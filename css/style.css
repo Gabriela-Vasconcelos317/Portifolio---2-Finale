@@ -1,0 +1,292 @@
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho total */
+}
+
+body {
+    
+    background: linear-gradient(45deg, #b1ddff, #f8c3b3); /* Degradê diagonal */
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove margens padrão */
+}
+
+header {
+    padding: 10px 0; /* Preenchimento no header */
+    background-color: #d2d7e7; /* Cor de fundo do header */
+}
+
+h1, p, .destaque_t {
+    color: #bc3c5a; 
+        font-family: 'Raleway', sans-serif;
+}
+
+.destaque_t {
+    color: #374375; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.pai {
+    margin: 5% 15%; /* Margens */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 40px; 
+    height: 100vh; /* Altura total da viewport */
+}
+
+.textor {
+    width: 615px; /* Largura fixa */
+    display: flex; 
+    justify-content: center; /* Centraliza itens horizontalmente */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.links {
+    display: flex; 
+    justify-content: space-between; /* Espaça itens igualmente */
+    align-items: center; 
+    flex-direction: column; /* Organiza itens em coluna */
+    gap: 28px; /* Espaçamento entre itens */
+}
+
+.pz_titulo {
+    font-size: 34px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+.pz_texto {
+    font-size: 22px; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+}
+
+.button {
+    display: flex; 
+    padding: 10px 20px; 
+    color: #374375; 
+    border-width: 2px; /* Largura da borda */
+    border-color: #bc3c5a; 
+    border-style: solid; 
+    border-radius: 8px; /* Arredondamento das bordas */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center; 
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    gap: 6px; 
+    width: 378px; /* Largura fixa */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; /* Peso mais grosso para destaque */
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.button:hover {
+    background-color: #bc3c5a;  /* Cor de fundo ao passar o cursor */
+}
+
+.apresentação_titulo_link {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+    color: #374375;  /* Cor do texto */
+}
+
+footer {
+    background-color: #d2d7e7; /* Cor de fundo do rodapé */
+}
+
+.rodape {
+    padding: 24px; /* Preenchimento */
+    text-align: center; /* Alinha texto ao centro */
+    font-size: 22px; /* Tamanho da fonte */
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    color: #760d26; 
+}
+
+.menu {
+    display: flex; 
+    padding: 10px 5%; /* Preenchimento */
+    flex-direction: row; /* Alinha itens horizontalmente */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin-left: 12%; 
+    gap: 100px; 
+    font-size: 24px; 
+}
+
+.menu1 {
+    text-decoration: none; 
+    color: #bc3c5a; 
+    font-size: 24px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; 
+    font-style: normal; 
+}
+
+/* Media Queries */
+/* Máximo 1024px */
+@media (max-width: 1024px) {
+    .pai {
+        margin: 5% 10%; 
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .textor {
+        width: 90%; 
+    }
+
+    .menu {
+        gap: 50px; 
+        flex-direction: column; 
+        align-items: center; 
+        font-size: 20px; 
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+}
+/* Máximo 768px */
+@media (max-width: 768px) {
+    .pai {
+        margin: 5% 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Ajusta o espaçamento entre os elementos */
+    }
+
+    img {
+        align-self: center; /* Centraliza a imagem */
+        margin: 20px 0; /* Espaçamento entre os textos e a imagem */
+    }
+
+    .menu {
+        gap: 30px;
+        font-size: 18px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 16px;
+    }
+    .pai {
+        margin: 5% 2%; /* Margens */
+        display: flex; 
+        align-items: center; 
+        justify-content: center; /* Centraliza o container no eixo horizontal */
+        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+        gap: 40px; 
+        height: auto; /* Altura auto para se ajustar ao conteúdo */
+    }
+    
+    /* CSS existente para .textor */
+    .textor {
+        width: 100%; /* Ajuste para 100% para ocupar toda a largura */
+        display: flex; 
+        justify-content: center; /* Centraliza itens horizontalmente */
+        align-items: center; /* Alinha itens verticalmente ao centro */
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    
+    /* Ajustes no menu */
+    .menu {
+        display: flex; 
+        padding: 10px 5%; /* Preenchimento */
+        flex-direction: column; /* Alinha itens em coluna */
+        justify-content: center; /* Centraliza os itens */
+        align-items: center; /* Centraliza os itens no eixo vertical */
+        margin-left: 0; /* Remove a margem esquerda */
+        gap: 20px; 
+        font-size: 16px; 
+    }
+}
+
+/* Máximo 480px */
+@media (max-width: 480px) {
+    .pai {
+        margin: 5% 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textor {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    img {
+        align-self: center;
+        margin: 20px 0;
+    }
+
+    .menu {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .pz_titulo {
+        font-size: 28px;
+    }
+
+    .pz_texto {
+        font-size: 20px;
+    }
+    .pai {
+        margin: 5% 2%; /* Margens */
+        display: flex; 
+        align-items: center; 
+        justify-content: center; /* Centraliza o container no eixo horizontal */
+        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+        gap: 40px; 
+        height: auto; /* Altura auto para se ajustar ao conteúdo */
+    }
+    
+    /* CSS existente para .textor */
+    .textor {
+        width: 100%; /* Ajuste para 100% para ocupar toda a largura */
+        display: flex; 
+        justify-content: center; /* Centraliza itens horizontalmente */
+        align-items: center; /* Alinha itens verticalmente ao centro */
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    
+    /* Ajustes no menu */
+    .menu {
+        display: flex; 
+        padding: 10px 5%; /* Preenchimento */
+        flex-direction: column; /* Alinha itens em coluna */
+        justify-content: center; /* Centraliza os itens */
+        align-items: center; /* Centraliza os itens no eixo vertical */
+        gap: 20px; 
+  
+    }
+}

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #b1ddff, #f8c3b3);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #d2d7e7;
+}
+
+h1, h2, p, .subtitulo {
+    color: #bc3c5a;
+}
+
+.pz_titulo {
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #bc3c5a;
+ 
+    flex: 1;
+}
+
+/* texto padrão */
+.pz_texto {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Estilo para a seção de projetos */
+.projetos {
+
+    margin: 20px 0; /* Margem acima e abaixo da seção */
+}
+
+.projetos ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+.projetos li {
+    margin: 10px 0; /* Margem entre os itens da lista */
+}
+
+.projetos a {
+    display: inline-block; /* Faz com que o link se comporte como um botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Cor do texto do botão */
+    background-color: #bc3c5a; /* Cor de fundo do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 20px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.projetos a:hover {
+    background-color: #760d26; /* Muda a cor de fundo do botão ao passar o mouse */
+}
+
+/* rodapé */
+.rodape {
+    background-color: #d2d7e7;
+    padding: 24px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #760d26;
+    margin-top: auto;
+}
+
+/* menu de navegação */
+.menu {
+    display: flex;
+    padding: 10px 5%;
+    flex-direction: row;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+    font-size: 24px;
+}
+
+/* itens do menu */
+.menu1 {
+    text-decoration: none;
+    color: #bc3c5a;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/* contêiner principal do conteúdo */
+.editarmain {
+    margin: 5% auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* seção de texto */
+.textor {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.linha-superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.linha-separadora {
+    border: 0;
+    height: 1px;
+    background: #374375;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.linha-separadora-inferior {
+    border: 0;
+    height: 1.5px;
+    background: #374375;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.texto {
+    flex: 3;
+}
+
+img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.foto-redonda {
+    border-radius: 30%;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+    .editarmain {
+        margin: 5% 5%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .editarmain {
+        margin: 5% 5%;
+    }
+
+    .textor {
+        width: 100%;
+    }
+
+    .menu {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .pz_titulo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .editarmain {
+        margin: 5% 2%;
+    }
+
+    .textor {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .pz_titulo {
+        font-size: 24px;
+    }
+
+    .pz_texto {
+        font-size: 20px;
+    }
+
+    .rodape {
+        font-size: 18px;
+    }
+}
